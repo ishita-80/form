@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div >
+            <img class="image" src="kiet.png" ></div>
+        <div class="container"> 
+            <div class="logo">
+                <img src="https://images.collegedunia.com/public/college_data/images/logos/1656321643KIETLOGO02.png" class="up" > 
+            </div>
+
+            <div >
+                    <h1>Registration form </h1>
+                    <form class="form" id="form">
+                    <table> <tr> <td><label for="name">Enter your name: </label></td>
+                   <td> <input type="text" name="name" id="name" maxlength="32" pattern="[A-Za-z]{1,32}" required><br></td></tr>
+                   <tr> <td> <label for="email">Enter your email: </label></td>
+                    <td><input type="email" name="email" id="email"  pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" required><br></td></tr>
+                    <tr> <td><label for="number">Enter your number: </label></td>
+                        <td><input type="tel" name="number" id="number" placeholder="98765-98765" pattern="[0-9]{5}-[0-9]{5}" required><br></td></tr>
+                    <tr> <td><label for="gender">Gender:</label></td>
+                        <td><input type="radio" name="gender" id="gen" value="male" required>
+                        <label for="gender">male</label>
+                        <input type="radio" name="gender" id="gen1" value="female">
+                        <label for="gender">female</label> 
+                     <br></td></tr>
+                    
+                    <tr> <td> <label for="stay">Where do you stay:</label></td>
+
+                   <td> <select name="stay" id="stay" >
+                      <option value="hostel">hostel</option>
+                      <option value="dayscholar">dayscholar</option>
+                    <option value="pg">pg</option>
+                    <option value="flat">flat</option>
+                    </td>
+                      
+                    </select> 
+                </td></tr>
+                </table>
+
+               
+            </div><button type="submit" class="button"  > submit</button>
+           </form>
+        </div>
+        
+    </div>
+    
+</body>
+
+
+<script src="script.js"></script>
+</html>
